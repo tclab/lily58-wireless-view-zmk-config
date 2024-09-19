@@ -116,10 +116,10 @@
 
         Functions {
             bindings = <
-&trans  &trans  &trans  &trans   &trans   &trans                     &trans  &trans      &trans             &trans           &trans                &trans
-&trans  &trans  &trans  &trans   &trans   &trans                     &trans  &kp K_MUTE  &kp C_VOLUME_DOWN  &kp C_VOLUME_UP  &kp C_BRIGHTNESS_INC  &kp C_BRI_DEC
-&kp F1  &kp F2  &kp F3  &kp F4   &kp F5   &kp F6                     &trans  &trans      &kp C_PREVIOUS     &kp C_NEXT       &trans                &trans
-&kp F7  &kp F8  &kp F9  &kp F10  &kp F11  &kp F12  &trans    &trans  &trans  &trans      &trans             &trans           &trans                &trans
+&trans  &trans  &trans  &trans   &trans   &trans                     &trans  &trans      &trans             &trans           &trans                  &trans
+&trans  &trans  &trans  &trans   &trans   &trans                     &trans  &kp K_MUTE  &kp C_VOLUME_DOWN  &kp C_VOLUME_UP  &kp C_BRI_DN            &kp LS(C_BRIGHTNESS_INC)
+&kp F1  &kp F2  &kp F3  &kp F4   &kp F5   &kp F6                     &trans  &trans      &kp C_PREVIOUS     &kp C_NEXT       &kp C_BACKLIGHT_TOGGLE  &trans
+&kp F7  &kp F8  &kp F9  &kp F10  &kp F11  &kp F12  &trans    &trans  &trans  &trans      &trans             &trans           &trans                  &trans
                         &trans   &trans   &trans   &trans    &trans  &trans  &trans      &trans
             >;
 

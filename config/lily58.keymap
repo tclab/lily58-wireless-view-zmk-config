@@ -4,8 +4,6 @@
 
 / {
     macros {
-        #define OS_LEAD  &kp RALT &kp U  // OS specific sequence to initialize unicode
-        #define OS_TRAIL &kp RET         // OS specific sequence to terminate unicode
         word_left: word_left {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
@@ -38,7 +36,7 @@
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings = <&kp RALT &kp U &kp 0 &kp 0 &kp D &kp 1 &kp RET>;
-            label = "UC_NTIL_CAP";
+            label = "UC_NTIL";
             wait-ms = <5>;
             tap-ms = <5>;
         };
@@ -47,16 +45,16 @@
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings = <&kp RALT &kp U &kp 0 &kp 0 &kp F &kp 1 &kp RET>;
-            label = "UC_NTIL";
+            label = "UC_NTIL_CAP";
             wait-ms = <5>;
             tap-ms = <5>;
         };
     };
 
     behaviors {
-        UC_NTIL: UC_NTIL {
+        UC_NTIL_BEH: UC_NTIL_BEH {
             compatible = "zmk,behavior-mod-morph";
-            label = "UC_NTIL";
+            label = "UC_NTIL_BEH";
             bindings = <&ntil>, <&ntil_cap>;
 
             #binding-cells = <0>;
@@ -78,10 +76,10 @@
 
             display-name = "Default";
             bindings = <
-&kp ESC     &kp N1  &kp N2  &kp N3    &kp N4  &kp N5                            &kp N6  &kp N7  &kp N8     &kp N9   &kp N0    &kp BACKSPACE
-&kp TAB     &kp Q   &kp W   &kp E     &kp R   &kp T                             &kp Y   &kp U   &kp I      &kp O    &kp P     &kp ENTER
-&kp LSHIFT  &kp A   &kp S   &kp D     &kp F   &kp G                             &kp H   &kp J   &kp K      &kp L    &UC_NTIL  &kp RSHIFT
-&kp LCTRL   &kp Z   &kp X   &kp C     &kp V   &kp B     &kp LBKT     &kp RBKT   &kp N   &kp M   &kp COMMA  &kp DOT  &kp FSLH  &kp RCTRL
+&kp ESC     &kp N1  &kp N2  &kp N3    &kp N4  &kp N5                            &kp N6  &kp N7  &kp N8     &kp N9   &kp N0        &kp BACKSPACE
+&kp TAB     &kp Q   &kp W   &kp E     &kp R   &kp T                             &kp Y   &kp U   &kp I      &kp O    &kp P         &kp ENTER
+&kp LSHIFT  &kp A   &kp S   &kp D     &kp F   &kp G                             &kp H   &kp J   &kp K      &kp L    &UC_NTIL_BEH  &kp RSHIFT
+&kp LCTRL   &kp Z   &kp X   &kp C     &kp V   &kp B     &kp LBKT     &kp RBKT   &kp N   &kp M   &kp COMMA  &kp DOT  &kp FSLH      &kp RCTRL
                             &kp LALT  &mo 1   &kp LGUI  &kp SPACE    &kp SPACE  &mo 2   &mo 3   &mo 4
             >;
 

@@ -31,7 +31,7 @@
         delete_word_L: delete_word {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp LC(LS(BACKSPACE))>;
+            bindings = <&kp LC(BACKSPACE)>;
             label = "DELETE_WORD";
         };
 
@@ -91,7 +91,7 @@
         delete_word_R: delete_word_R {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp LC(LS(DELETE))>;
+            bindings = <&kp LC(DELETE)>;
             label = "DELETE_WORD_R";
         };
     };

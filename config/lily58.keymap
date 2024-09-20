@@ -158,11 +158,11 @@
 
             display-name = "Symbols";
             bindings = <
-&trans         &trans     &trans        &trans    &trans    &trans                              &trans    &trans         &trans    &trans  &trans           &trans
-&kp GRAVE      &trans     &kp AT        &kp LBRC  &kp RBRC  &trans                              &trans    &trans         &trans    &trans  &trans           &trans
-&kp LESS_THAN  &kp EQUAL  &kp QUESTION  &kp LPAR  &kp RPAR  &kp GREATER_THAN                    &kp EXCL  &kp AMPERSAND  &kp PIPE  &trans  &kp RIGHT_SHIFT  &trans
-&trans         &kp PRCNT  &kp DOLLAR    &kp LBKT  &kp RBKT  &trans            &trans    &trans  &trans    &trans         &trans    &trans  &trans           &trans
-                                        &trans    &trans    &trans            &trans    &trans  &none     &none          &none
+&kp GRAVE         &trans             &trans        &trans    &trans    &trans                              &trans    &trans             &trans            &trans  &trans           &trans
+&kp SINGLE_QUOTE  &kp DOUBLE_QUOTES  &kp AT        &kp LBRC  &kp RBRC  &trans                              &trans    &trans             &trans            &trans  &trans           &trans
+&kp LESS_THAN     &kp EQUAL          &kp QUESTION  &kp LPAR  &kp RPAR  &kp GREATER_THAN                    &kp EXCL  &kp AMPERSAND      &kp PIPE          &trans  &kp RIGHT_SHIFT  &trans
+&trans            &kp PRCNT          &kp DOLLAR    &kp LBKT  &kp RBKT  &trans            &trans    &trans  &trans    &kp DOUBLE_QUOTES  &kp SINGLE_QUOTE  &trans  &trans           &trans
+                                                   &trans    &trans    &trans            &trans    &trans  &none     &none              &none
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN>;

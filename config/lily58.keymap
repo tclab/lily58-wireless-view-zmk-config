@@ -95,11 +95,11 @@
             label = "DELETE_WORD_R";
         };
 
-        alt_tab: ctrl_tab {
+        alt_tab: alt_tab {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings = <&sk LA(TAB)>;
-            label = "CTRL_TAB";
+            label = "ALT_TAB";
         };
     };
 

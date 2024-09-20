@@ -94,13 +94,6 @@
             bindings = <&kp LC(DELETE)>;
             label = "DELETE_WORD_R";
         };
-
-        alt_tab: alt_tab {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings = <&sk LA(TAB)>;
-            label = "ALT_TAB";
-        };
     };
 
     behaviors {
@@ -145,11 +138,11 @@
 
             display-name = "Default";
             bindings = <
-&kp ESC     &ctrl_shift_tab  &alt_tab  &left_desk  &right_desk   &alt_tab                          &kp N6  &kp N7  &kp N8       &kp N9         &kp N0     &kp BACKSPACE
-&kp TAB     &kp Q            &kp W     &kp E       &kp R         &kp T                             &kp Y   &kp U   &kp I        &kp O          &kp P      &kp ENTER
-&kp LSHIFT  &kp A            &kp S     &kp D       &kp F         &kp G                             &kp H   &kp J   &kp K        &kp L          &kp TILDE  &kp RSHIFT
-&kp LCTRL   &kp Z            &kp X     &kp C       &kp V         &kp B     &mo 3        &kp RBKT   &kp N   &kp M   &comma_semi  &period_colon  &kp MINUS  &kp RCTRL
-                                       &kp LALT    &kp LEFT_GUI  &mo 1     &kp ENTER    &kp SPACE  &mo 2   &mo 3   &mo 4
+&kp ESC     &ctrl_shift_tab  &ctrl_tab  &left_desk  &right_desk   &trans                          &kp N6  &kp N7  &kp N8       &kp N9         &kp N0     &kp BACKSPACE
+&kp TAB     &kp Q            &kp W      &kp E       &kp R         &kp T                           &kp Y   &kp U   &kp I        &kp O          &kp P      &kp ENTER
+&kp LSHIFT  &kp A            &kp S      &kp D       &kp F         &kp G                           &kp H   &kp J   &kp K        &kp L          &kp TILDE  &kp RSHIFT
+&kp LCTRL   &kp Z            &kp X      &kp C       &kp V         &kp B   &kp LBKT     &kp RBKT   &kp N   &kp M   &comma_semi  &period_colon  &kp MINUS  &kp RCTRL
+                                        &kp LALT    &kp LEFT_GUI  &mo 1   &kp ENTER    &kp SPACE  &mo 2   &mo 3   &mo 4
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN>;

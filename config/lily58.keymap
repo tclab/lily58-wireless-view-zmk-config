@@ -148,7 +148,7 @@
 &kp ESC     &ctrl_shift_tab  &ctrl_tab  &left_desk  &right_desk   &ctrl_tab                          &kp N6  &kp N7  &kp N8       &kp N9         &kp N0     &kp BACKSPACE
 &kp TAB     &kp Q            &kp W      &kp E       &kp R         &kp T                              &kp Y   &kp U   &kp I        &kp O          &kp P      &kp ENTER
 &kp LSHIFT  &kp A            &kp S      &kp D       &kp F         &kp G                              &kp H   &kp J   &kp K        &kp L          &kp TILDE  &kp RSHIFT
-&kp LCTRL   &kp Z            &kp X      &kp C       &kp V         &kp B      &kp LBKT     &kp RBKT   &kp N   &kp M   &comma_semi  &period_colon  &kp MINUS  &kp RCTRL
+&kp LCTRL   &kp Z            &kp X      &kp C       &kp V         &kp B      &mo 3        &kp RBKT   &kp N   &kp M   &comma_semi  &period_colon  &kp MINUS  &kp RCTRL
                                         &kp LALT    &kp LEFT_GUI  &mo 1      &kp ENTER    &kp SPACE  &mo 2   &mo 3   &mo 4
             >;
 
@@ -197,11 +197,11 @@
 
         Numbers {
             bindings = <
-&trans  &trans  &trans  &trans  &trans  &trans                    &trans  &kp N7     &kp N8  &kp N9      &kp KP_DIVIDE    &trans
-&trans  &trans  &trans  &trans  &trans  &trans                    &trans  &kp N4     &kp N5  &kp N6      &kp KP_MULTIPLY  &trans
-&trans  &trans  &trans  &trans  &trans  &trans                    &trans  &kp N1     &kp N2  &kp N3      &kp KP_SUBTRACT  &trans
-&trans  &trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &kp EQUAL  &kp N0  &kp PERIOD  &kp PLUS         &trans
-                        &trans  &trans  &trans  &trans    &trans  &trans  &trans     &trans
+&trans  &trans     &trans    &trans     &trans    &trans                    &trans  &kp N7     &kp N8      &kp N9  &trans  &trans
+&trans  &trans     &trans    &trans     &trans    &trans                    &trans  &kp N4     &kp N5      &kp N6  &trans  &trans
+&trans  &kp SLASH  &kp STAR  &kp MINUS  &kp PLUS  &trans                    &trans  &kp N1     &kp N2      &kp N3  &trans  &trans
+&trans  &trans     &trans    &trans     &trans    &trans  &trans    &trans  &trans  &kp EQUAL  &kp PERIOD  &kp N0  &trans  &trans
+                             &trans     &trans    &trans  &trans    &trans  &trans  &trans     &trans
             >;
 
             label = "Numbers";

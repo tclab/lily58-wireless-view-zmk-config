@@ -158,11 +158,11 @@
 
             display-name = "Symbols";
             bindings = <
-&trans         &trans     &trans        &trans    &trans    &trans                              &trans     &trans             &trans            &trans  &trans           &trans
-&trans         &trans     &kp AT        &kp LBRC  &kp RBRC  &trans                              &trans     &trans             &trans            &trans  &trans           &trans
-&kp LESS_THAN  &kp EQUAL  &kp QUESTION  &kp LPAR  &kp RPAR  &kp GREATER_THAN                    &kp EXCL   &kp AMPERSAND      &kp PIPE          &trans  &kp RIGHT_SHIFT  &trans
-&trans         &kp PRCNT  &kp DOLLAR    &kp LBKT  &kp RBKT  &trans            &trans    &trans  &kp GRAVE  &kp DOUBLE_QUOTES  &kp SINGLE_QUOTE  &trans  &trans           &trans
-                                        &trans    &trans    &trans            &trans    &trans  &none      &none              &none
+&trans         &trans     &trans        &trans    &trans    &trans                              &trans    &trans         &trans    &trans             &trans            &trans
+&trans         &trans     &kp AT        &kp LBRC  &kp RBRC  &trans                              &trans    &trans         &trans    &trans             &trans            &trans
+&kp LESS_THAN  &kp EQUAL  &kp QUESTION  &kp LPAR  &kp RPAR  &kp GREATER_THAN                    &kp EXCL  &kp AMPERSAND  &kp PIPE  &kp DOUBLE_QUOTES  &kp SINGLE_QUOTE  &kp GRAVE
+&trans         &kp PRCNT  &kp DOLLAR    &kp LBKT  &kp RBKT  &trans            &trans    &trans  &trans    &trans         &trans    &trans             &trans            &trans
+                                        &trans    &trans    &trans            &trans    &trans  &none     &none          &none
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN>;
@@ -178,10 +178,10 @@
 
             display-name = "Nav";
             bindings = <
-&trans   &trans      &trans          &trans          &trans          &trans                    &trans   &trans    &trans        &trans     &trans  &kp BACKSPACE
-&kp TAB  &trans      &trans          &trans          &trans          &trans                    &trans   &trans    &kp UP_ARROW  &trans     &trans  &trans
-&trans   &word_left  &select_word_L  &select_word_R  &word_right     &trans                    &kp DEL  &kp LEFT  &kp DOWN      &kp RIGHT  &trans  &kp ENTER
-&trans   &trans      &trans          &delete_word_L  &delete_word_R  &trans  &trans    &trans  &trans   &kp HOME  &kp END       &trans     &trans  &trans
+&trans   &trans      &trans          &trans          &trans          &trans                    &trans   &trans    &trans        &trans       &trans         &kp BACKSPACE
+&kp TAB  &trans      &trans          &trans          &trans          &trans                    &trans   &trans    &kp UP_ARROW  &trans       &trans         &trans
+&trans   &word_left  &select_word_L  &select_word_R  &word_right     &trans                    &kp DEL  &kp LEFT  &kp DOWN      &kp RIGHT    &trans         &kp ENTER
+&trans   &trans      &trans          &delete_word_L  &delete_word_R  &trans  &trans    &trans  &trans   &kp HOME  &kp END       &kp PAGE_UP  &kp PAGE_DOWN  &trans
                                      &trans          &trans          &trans  &trans    &trans  &trans   &trans    &trans
             >;
 
@@ -190,23 +190,24 @@
 
         Numbers {
             bindings = <
-&trans  &trans     &trans    &trans     &trans    &trans                    &trans  &kp N7     &kp N8      &kp N9  &trans  &trans
-&trans  &trans     &trans    &trans     &trans    &trans                    &trans  &kp N4     &kp N5      &kp N6  &trans  &trans
-&trans  &kp SLASH  &kp STAR  &kp MINUS  &kp PLUS  &trans                    &trans  &kp N1     &kp N2      &kp N3  &trans  &trans
-&trans  &trans     &trans    &trans     &trans    &trans  &trans    &trans  &trans  &kp EQUAL  &kp PERIOD  &kp N0  &trans  &trans
-                             &trans     &trans    &trans  &trans    &trans  &trans  &trans     &trans
+&trans  &trans     &trans    &trans     &trans     &trans                    &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans     &trans    &trans     &trans     &trans                    &trans  &trans  &kp N7  &kp N8  &kp N9  &trans
+&trans  &kp SLASH  &kp STAR  &kp MINUS  &kp PLUS   &trans                    &trans  &kp N0  &kp N4  &kp N5  &kp N6  &trans
+&trans  &trans     &trans    &trans     &kp EQUAL  &trans  &trans    &trans  &trans  &trans  &kp N1  &kp N2  &kp N3  &trans
+                             &trans     &trans     &trans  &trans    &trans  &trans  &trans  &trans
             >;
 
             label = "Numbers";
+            sensor-bindings = <&inc_dec_kp 0 0>;
         };
 
         Functions {
             bindings = <
-&bt BT_CLR  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4                    &trans  &trans      &trans             &trans           &trans          &trans
-&trans      &trans        &trans        &trans        &trans        &trans                          &trans  &trans      &trans             &trans           &trans          &trans
-&kp F1      &kp F2        &kp F3        &kp F4        &kp F5        &kp F6                          &trans  &kp C_MUTE  &kp C_VOLUME_DOWN  &kp C_VOLUME_UP  &kp C_PREVIOUS  &kp C_NEXT
-&kp F7      &kp F8        &kp F9        &kp F10       &kp F11       &kp F12       &trans    &trans  &trans  &trans      &kp C_BRI_DN       &kp C_BRI_UP     &trans          &trans
-                                        &trans        &trans        &trans        &trans    &trans  &trans  &trans      &trans
+&bt BT_CLR  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4                    &trans  &trans             &trans           &trans          &trans      &trans
+&trans      &trans        &trans        &trans        &trans        &trans                          &trans  &trans             &trans           &trans          &trans      &trans
+&kp F1      &kp F2        &kp F3        &kp F4        &kp F5        &kp F6                          &trans  &kp C_VOLUME_DOWN  &kp C_VOLUME_UP  &kp C_PREVIOUS  &kp C_NEXT  &trans
+&kp F7      &kp F8        &kp F9        &kp F10       &kp F11       &kp F12       &trans    &trans  &trans  &kp C_MUTE         &kp C_BRI_DN     &kp C_BRI_UP    &trans      &trans
+                                        &trans        &trans        &trans        &trans    &trans  &trans  &trans             &trans
             >;
 
             label = "Functions";

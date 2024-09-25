@@ -196,11 +196,11 @@
 
             display-name = "Nav";
             bindings = <
-&trans   &trans      &trans          &trans             &trans              &trans                    &trans   &trans    &trans        &trans       &trans         &kp BACKSPACE
-&kp TAB  &trans      &trans          &move_window_left  &move_window_right  &trans                    &trans   &trans    &kp UP_ARROW  &trans       &trans         &trans
-&trans   &word_left  &select_word_L  &select_word_R     &word_right         &trans                    &kp DEL  &kp LEFT  &kp DOWN      &kp RIGHT    &trans         &kp ENTER
-&trans   &trans      &trans          &delete_word_L     &delete_word_R      &trans  &trans    &trans  &trans   &kp HOME  &kp END       &kp PAGE_UP  &kp PAGE_DOWN  &trans
-                                     &trans             &trans              &trans  &trans    &trans  &trans   &trans    &trans
+&trans          &trans      &trans          &trans             &trans              &trans                    &trans   &trans    &trans        &trans       &trans         &kp BACKSPACE
+&kp TAB         &trans      &trans          &move_window_left  &move_window_right  &trans                    &trans   &trans    &kp UP_ARROW  &trans       &trans         &kp ENTER
+&kp LEFT_SHIFT  &word_left  &select_word_L  &select_word_R     &word_right         &trans                    &kp DEL  &kp LEFT  &kp DOWN      &kp RIGHT    &trans         &kp RIGHT_SHIFT
+&trans          &trans      &trans          &delete_word_L     &delete_word_R      &trans  &trans    &trans  &trans   &kp HOME  &kp END       &kp PAGE_UP  &kp PAGE_DOWN  &trans
+                                            &trans             &trans              &trans  &trans    &trans  &trans   &trans    &trans
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN>;

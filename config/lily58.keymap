@@ -39,13 +39,13 @@
             label = "DELETE_WORD";
         };
 
-        ZMK_MACRO(ntil,
+        ntil: ntil {
             wait-ms = <0>;
             tap-ms = <0>;
             bindings = <&macro_press &kp LALT>,
                        <&macro_tap &kp KP_N0 &kp KP_N2 &kp KP_N4 &kp KP_N1>,
                        <&macro_release &kp LALT>;
-        )
+        };
 
         ntil_cap: ntil_cap {
             compatible = "zmk,behavior-macro";

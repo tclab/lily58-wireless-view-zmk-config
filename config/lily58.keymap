@@ -40,11 +40,14 @@
         };
 
         ZMK_MACRO(ntil,
-            wait-ms = <0>;
-            tap-ms = <0>;
-            bindings = <&macro_press &kp LALT>,
-                       <&macro_tap &kp KP_N0 &kp KP_N2 &kp KP_N4 &kp KP_N1>,
-                       <&macro_release &kp LALT>;
+
+        wait-ms = <0>;
+        tap-ms = <0>;
+        bindings =
+            <&macro_press &kp LALT>,
+            <&macro_tap &kp KP_N0 &kp KP_N2 &kp KP_N4 &kp KP_N1>,
+            <&macro_release &kp LALT>;
+
         )
 
         ntil_cap: ntil_cap {
@@ -175,11 +178,11 @@
 
             display-name = "Symbols";
             bindings = <
-&trans         &trans     &trans        &trans    &trans    &trans                              &trans    &trans         &trans     &trans             &trans            &trans
-&trans         &trans     &kp AT        &kp LBRC  &kp RBRC  &trans                              &trans    &trans         &kp PLUS   &kp ASTERISK       &trans            &trans
-&kp LESS_THAN  &kp EQUAL  &kp QUESTION  &kp LPAR  &kp RPAR  &kp GREATER_THAN                    &kp EXCL  &kp AMPERSAND  &kp PIPE   &kp DOUBLE_QUOTES  &kp SINGLE_QUOTE  &kp GRAVE
-&kp HASH       &kp PRCNT  &kp DOLLAR    &kp LBKT  &kp RBKT  &trans            &trans    &trans  &trans    &trans         &kp SLASH  &kp BACKSLASH      &trans            &trans
-                                        &trans    &trans    &trans            &trans    &trans  &none     &none          &none
+&trans         &trans     &trans    &trans    &trans        &trans                              &trans    &trans         &trans     &trans             &trans            &trans
+&trans         &trans     &kp LBRC  &kp RBRC  &kp AT        &trans                              &trans    &trans         &kp PLUS   &kp ASTERISK       &trans            &trans
+&kp LESS_THAN  &kp EQUAL  &kp LPAR  &kp RPAR  &kp QUESTION  &kp GREATER_THAN                    &kp EXCL  &kp AMPERSAND  &kp PIPE   &kp DOUBLE_QUOTES  &kp SINGLE_QUOTE  &kp GRAVE
+&kp HASH       &kp PRCNT  &kp LBKT  &kp RBKT  &kp DOLLAR    &trans            &trans    &trans  &trans    &trans         &kp SLASH  &kp BACKSLASH      &trans            &trans
+                                    &trans    &trans        &trans            &trans    &trans  &none     &none          &none
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN>;
